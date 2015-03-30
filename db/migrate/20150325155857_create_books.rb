@@ -4,7 +4,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :cover
       t.string :title
       t.string :author
-      t.string :passage
+      t.text :passage, :limit => nil
 
       t.timestamps
     end

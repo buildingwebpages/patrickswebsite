@@ -17,13 +17,13 @@ ActiveRecord::Schema.define(version: 20150330200035) do
     t.string   "cover"
     t.string   "title"
     t.string   "author"
-    t.string   "passage"
+    t.text     "passage"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "pages", force: true do |t|
-    t.string   "comment"
+    t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
