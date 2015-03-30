@@ -1,0 +1,39 @@
+<!--------------------------- NAVIGATION --------------------------->
+<div class="navigation">
+  <div class="container">
+  
+    <div class="pull-right">
+      <ul class="nav nav-pills">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About Me", about_path %></li>
+        <li class="active"><%= link_to "Good Books", books_path %></li>
+        <li><%= link_to "Shout Out", shout_path %></li>
+      </ul>
+    </div>
+  
+  </div>
+</div>
+
+<!--------------------------- BOOKS --------------------------->
+<div class="books">
+  <div class="container">
+      
+    <% @books.in_groups_of(3).each do |book_group| %>
+      <div class="row">
+      <% book_group.each do |book| %>
+        <% next if book.nil? %>
+        <div class="col-xs-4">
+        <%= link_to(book) do %>
+
+          <%= image_tag "#{book.cover}" %>
+          
+          <h3 class="title"><%= book.title %></h3>
+          <p class="author"><%= book.author %></p>
+        <% end %>
+        </div>
+      <% end %>
+      </div>
+    <% end %> 
+    
+  </div>
+</div>

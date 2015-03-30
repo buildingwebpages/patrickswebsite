@@ -1,0 +1,35 @@
+<!--------------------------- NAVIGATION --------------------------->
+<div class="navigation">
+  <div class="container">
+  
+    <div class="pull-right">
+      <ul class="nav nav-pills">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About Me", about_path %></li>
+        <li class="active"><%= link_to "Good Books", books_path %></li>
+        <li><%= link_to "Shout Out", shout_path %></li>
+      </ul>
+    </div>
+  
+  </div>
+</div>
+
+<!--------------------------- BOOK DESCRIPTION --------------------------->
+
+<div class="description">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-xs-4 pull-left">
+        <%= image_tag @book.cover %>
+        <h3>Title: <%= @book.title %></h3>
+        <p>Author: <%= @book.author %></p>
+      </div>
+      
+      <div class="col-xs-8 pull-right">
+        <p><strong>Sample Passage: </strong><%= @book.passage %></p>
+      </div>
+      
+    </div>
+  </div>
+</div>

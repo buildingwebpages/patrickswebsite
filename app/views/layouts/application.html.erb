@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patrick</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <!--------------------------- HEADER --------------------------->
+  <div class="header">
+    <div class="container">
+      
+      <h1>Welcome to Patrick's Website</h1>
+      
+    </div>
+  </div>
+  
+  <%= yield %>
+  
+  <!--------------------------- FOOTER --------------------------->
+  <div class="footer">
+    <div class="container">
+      
+      <ul>
+        <li id="email" class="old-border">email</li>
+        <a href="https://www.tumblr.com/blog/patgappacademy" target="_blank"><li>blog</li></a>
+        <li class="pull-right">&copy;2015</li>
+      </ul>
+      
+      <div id="email-div">
+        <p>Contact me at p.gardocki@gmail.com</p>
+      </div>
+        
+    </div>
+  </div>
+  
+  <script src="//netdna.bootstrapcdn.com/bootstrap/<%= bootstrap_version %>/js/bootstrap.min.js"></script>
+</body>
+</html>

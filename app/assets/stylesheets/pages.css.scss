@@ -1,0 +1,93 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*********************** HOME ***********************/
+.home h2 { 
+  margin: 100px auto 180px auto;
+  text-align: center;
+  width: 500px;
+} 
+
+
+/*********************** ABOUT ***********************/
+.about span { float: left; }
+.about .drop-cap { 
+  float: left;
+  margin: 0;
+}
+
+
+/*********************** SHOUT ***********************/
+.shout p {
+  color: red;
+  margin: 0;
+}
+
+/*********************** SHOUT Form ***********************/
+.shout form { margin-bottom: 30px; }
+
+.shout form input {
+  background: #d0f4c6;
+  border: none;
+  border-top: 5px solid #006400;
+  border-left: 5px solid #006400;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  font-size: 36px;
+  padding: 20px;
+  transition: background 1s, border 1s;
+  width: 700px;
+}
+
+.shout form input:focus {
+  background: #fff;
+  border: none;
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid #006400;
+  border-right: 5px solid #006400;
+  outline: none;
+}
+
+.shout button {
+  margin-top: 30px;
+  margin-left: 10px;
+  outline: none;
+}
+
+.shout .glyphicon-arrow-down {
+  border: none;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  background: #fff;
+  color: #006400;
+  font-size: 36px;
+  padding: 22px 30px 30px 20px;
+}
+
+.shout button:hover {
+  background: #d0f4c6;
+  border-bottom: 5px solid #006400;
+  border-left: 5px solid #006400;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transition: background 1s, border 1s;
+}
+
+.shout ul { 
+  margin: 0;
+  margin-bottom: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.shout li {
+  border-left: 5px solid #006400;
+  font-size: 18px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}

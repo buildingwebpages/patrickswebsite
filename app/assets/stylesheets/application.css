@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/********************* HEADER *********************/
+.header {
+  background: url('trees.jpg');
+  height: 150px;
+}
+
+.header h1 {
+  color: #fff;
+  font-family: 'Chewy', cursive;
+  margin-top: 100px;
+}
+
+/********************* NAVIGATION *********************/
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.navigation li {
+  display: inline;
+  font-family: 'Indie Flower';
+  font-size: 18px;
+  text-align: center;
+}
+
+.navigation li a {
+  color: #006400;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+  background-color: #006400;
+}
+
+.navigation .nav-pills>li.active>a:hover {
+    background-color: #eee;
+    color: #006400;
+}
+
+/********************* FOOTER *********************/
+
+.footer .container {padding: 50px 0 30px 0;}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#email-div { 
+  border-left: 2px solid #006400;
+  border-bottom: 2px solid #006400;
+  display: none;
+  margin: 0;
+  margin-top: -2px;
+  width: 280px;
+}
+
+.footer p { 
+  margin: 0;
+  padding: 10px 20px;
+}
+
+#email { 
+  border-left: 2px solid #fff;
+  margin: 0;
+  cursor: pointer;
+}
+
+.toggle-border {
+  border-left: 2px solid #006400 !important ;
+}
+
+.footer li {
+  color: black;
+  display: inline;
+  font-weight: bold;
+  padding: 0 20px 0 20px;
+}
+
+.footer a {text-decoration: none;}
+.footer a>li:hover, .footer #email:hover {color: #006400;}
+
