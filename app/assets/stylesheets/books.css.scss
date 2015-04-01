@@ -36,9 +36,7 @@
 
 /*********************** SHOW - DESCRIPTION ***********************/
 
-.description img { 
-  display: block;
-  height: 400px;
+.description .img-responsive { 
+  max-height: 400px !important; 
   margin-right: auto;
-  width: auto;
 }
