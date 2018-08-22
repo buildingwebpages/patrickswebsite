@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #Specify Ruby version for Heroku
-ruby "2.1.5"
+ruby "2.5.1"
 
 gem 'jquery-turbolinks'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
