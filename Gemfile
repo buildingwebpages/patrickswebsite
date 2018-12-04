@@ -13,7 +13,7 @@ gem 'pg'
 gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets / 
-#gem 'sass-rails'
+#gem 'sass-rails' 
 gem 'sassc'
 gem 'sassc-rails'
 # Use Uglifier as compressor for JavaScript assets
