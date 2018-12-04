@@ -16,4 +16,6 @@
 /tmp
 
 # Ignore all metadata
-.c9/metadata/*
+.c9/*
+.c9/metadata/tab34
+/home/ubuntu/workspace/.c9/metadata/tab34
