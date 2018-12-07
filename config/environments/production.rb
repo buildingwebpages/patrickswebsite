@@ -28,8 +28,8 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  # =>CHANGED TO TRUE FOR HEROKU BACKGROUND
-  config.assets.compile = false
+  # =>CHANGED TO TRUE FOR HEROKU BACKGROUND; on 12/7/2018 tested again. false value DOES NOT work
+  config.assets.compile = true
 
   # Generate digests for assets URLs.
   config.assets.digest = true
