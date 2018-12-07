@@ -5,7 +5,7 @@ ruby "2.5.0"
 
 gem 'jquery-turbolinks'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.0'
+gem 'rails', '5.2.1.1'
 
 # Use sqlite3 as the database for Active Record, #pg and rails_12factor gems for Heroku
 gem 'sqlite3', group: [:development]
